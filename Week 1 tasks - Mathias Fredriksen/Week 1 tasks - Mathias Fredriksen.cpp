@@ -1,3 +1,4 @@
+//Written by Mathias Fredriksen
 //Got some help from Sten Rune Lyngmo when it came to clearing and ignoring the standard input stream.
 #include <iostream>
 #include <string>
