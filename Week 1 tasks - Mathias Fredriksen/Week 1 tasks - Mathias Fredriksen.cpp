@@ -1,3 +1,4 @@
+//Got some help from Sten Rune Lyngmo when it came to clearing and ignoring the standard input stream.
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -177,19 +178,19 @@ void Task3()
 	//Output reply based on age
 	if(age < 20)
 	{
-		std::cout << "You are quite young!\n";
+		std::cout << "\nYou are quite young!\n";
 	}
 	else if(age >= 20 && age < 40)
 	{
-		std::cout << "You must be a grown up adult!\n";
+		std::cout << "\nYou must be a grown up adult!\n";
 	}
 	else if (age >= 40 && age < 60) 
 	{
-		std::cout << "You are old. But with age comes experience!\n";
+		std::cout << "\nYou are old. But with age comes experience!\n";
 	}
 	else if(age >= 60)
 	{
-		std::cout << "You are really old! I bet you have many great stories to tell!\n";
+		std::cout << "\nYou are really old! I bet you have many great stories to tell!\n";
 	}
 
 	//Continue to next task
