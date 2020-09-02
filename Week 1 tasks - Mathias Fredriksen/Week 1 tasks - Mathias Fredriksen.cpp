@@ -12,7 +12,7 @@ void Task1()
     std::string full_name;
     std::cout << "Please enter your full name: ";
 	std::getline(std::cin, full_name);
-	std::cin.ignore(32767, '\n');
+	std::cin.clear();
 	char Integer{ full_name[0] };
 	
 	int age;
@@ -47,6 +47,7 @@ void Task1()
 	//Ask for and get the users birthdate
     std::string birthdate;
     std::cout << "Please enter the date you were born (dd/mm/yy): ";
+	std::cin.ignore(32767, '\n');
     std::cin >> birthdate;
 
 	//Find the longest string
@@ -81,6 +82,7 @@ void Task1()
 	std::cout << "------------------" << std::string(box_length, '-') << "--\n";
 
 
+	std::cin.ignore(32767, '\n');
 	std::cout << "\n\n" << "Please type anything to return to the menu\n";
 	int i; //This value is not used for any purpose later;
 	std::cin >> i;
